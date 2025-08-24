@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación</title>
+</head>
+<body>
+    <h1>✅ Nota creada con éxito</h1>
+    
+    <div>
+        <p><strong>📌 Título:</strong> {{ title }}</p>
+        <p><strong>📝 Descripción:</strong> {{ description }}</p>
+        <p><strong>📅 Fecha:</strong> {{ created_at }}</p>
+    </div>
+
+    <br>
+    <a href="{{ url_for('create_note') }}">⬅️ Crear otra nota</a>
+</body>
+</html>
